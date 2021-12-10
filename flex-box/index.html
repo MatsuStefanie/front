@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Study</title>
+</head>
+
+<body>
+    <main>
+        <header class="column">
+            <a  onclick="doScrolling(top)">
+                <button> Topo </button>
+            </a>
+            <a onclick="doScrolling(direction)">
+                <button> direction </button>
+            </a>
+            <a onclick="doScrolling(wrap)">
+                <button>wrap</button>
+            </a>
+            <a onclick="doScrolling(nowrap)">
+                <button>nowrap</button>
+            </a>
+            <a onclick="doScrolling(justStart)">
+                <button>justStart</button>
+            </a>
+            <a onclick="doScrolling(justEnd)">
+                <button>justEnd</button>
+            </a>
+            <a onclick="doScrolling(justCenter)">
+                <button>justCenter</button>
+            </a>
+            <a onclick="doScrolling(justBetween)">
+                <button>justBetween</button>
+            </a>
+            <a onclick="doScrolling(justAround)">
+                <button>justAround</button>
+            </a>
+        </header>
+
+        <section id="top" class="tela">
+            <h2 >Base</h2>
+            <section class="conteiner">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+        </section>
+
+        <section id="direction" class="tela">
+            <h2 >Flex direction em coluna</h2>
+            <section class="conteiner column">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+
+            <h2>Flex direction em linha</h2>
+            <section class="conteiner row">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+        </section>
+
+        <section id="wrap" class="tela">
+            <h2 >Flex direction em coluna wrap</h2>
+            <section class="conteiner column wrap">
+                <span>OneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOne</span>
+                <span>twotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwo</span>
+                <span>ThreeThreeThreeThreeThreeThreeThreeThreeThreeThree</span>
+                <span>FourFourFourFourFourFourFourFourFourFourFourFourFour</span>
+                <span>FiveFiveFiveFiveFiveFiveFiveFiveFiveFiveFiveFive</span>
+                <span>SixSixSixSixSixSixSixSixSixSixSixSixSixSixSixSix</span>
+                <span>SevenSevenSevenSevenSevenSevenSevenSevenSevenSeven</span>
+            </section>
+
+            <h2>Flex direction em linha wrap</h2>
+            <section class="conteiner row wrap">
+                <span>OneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOne</span>
+                <span>twotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwo</span>
+                <span>ThreeThreeThreeThreeThreeThreeThreeThreeThreeThree</span>
+                <span>FourFourFourFourFourFourFourFourFourFourFourFourFour</span>
+                <span>FiveFiveFiveFiveFiveFiveFiveFiveFiveFiveFiveFive</span>
+                <span>SixSixSixSixSixSixSixSixSixSixSixSixSixSixSixSix</span>
+                <span>SevenSevenSevenSevenSevenSevenSevenSevenSevenSeven</span>
+            </section>
+        </section>
+
+        <section id="nowrap" class="tela">
+            <h2 >Flex direction em coluna nowrap</h2>
+            <section class="conteiner column">
+                <span>OneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOneOne</span>
+                <span>twotwotwotwotwotwotwotwotwotwotwotwotwotwotwotwo</span>
+                <span>ThreeThreeThreeThreeThreeThreeThreeThreeThreeThree</span>
+                <span>FourFourFourFourFourFourFourFourFourFourFourFourFour</span>
+                <span>FiveFiveFiveFiveFiveFiveFiveFiveFiveFiveFiveFive</span>
+                <span>SixSixSixSixSixSixSixSixSixSixSixSixSixSixSixSix</span>
+                <span>SevenSevenSevenSevenSevenSevenSevenSevenSevenSeven</span>
+            </section>
+
+            <h2>Flex direction em linha nowrap</h2>
+            <section class="conteiner row ">
+                <span>OneOneOneOneOne</span>
+                <span>twotwotwo</span>
+                <span>ThreeThreeThree</span>
+                <span>FourFour</span>
+                <span>FiveFiveFiveFiveFiveFiveFive</span>
+                <span>SixSixSixSix</span>
+                <span>SevenSevenSevenSevenSevenSeven</span>
+            </section>
+        </section>
+
+        <section id="justStart" class="tela">
+            <h2 >Flex direction em coluna wrap justificando conteudo ao começo</h2>
+            <section class="conteiner2 column wrap start">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+
+            <h2>Flex direction em linha wrap justificando conteudo ao começo</h2>
+            <section class="conteiner2 row wrap start">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+        </section>
+
+        <section id="justEnd" class="tela">
+            <h2 >Flex direction em coluna wrap justificando conteudo ao fim</h2>
+            <section class="conteiner2 column wrap end">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+
+            <h2>Flex direction em linha wrap justificando conteudo ao fim</h2>
+            <section class="conteiner2 row wrap end">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+        </section>
+
+        <section id="justCenter" class="tela">
+            <h2 >Flex direction em coluna wrap justificando conteudo ao centro</h2>
+            <section class="conteiner2 column wrap center">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+
+            <h2>Flex direction em linha wrap justificando conteudo ao centro</h2>
+            <section class="conteiner2 row wrap center">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+        </section>
+
+        <section id="justBetween" class="tela">
+            <h2 >Flex direction em coluna wrap justificando conteudo ao espaço relativo entre todos</h2>
+            <section class="conteiner2 column wrap between">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+
+            <h2>Flex direction em linha wrap justificando conteudo ao espaço relativo entre todos</h2>
+            <section class="conteiner2 row wrap between">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+        </section>
+
+        <section id="justAround" class="tela">
+            <h2 >Flex direction em coluna wrap justificando conteudo ao espaço relativo entre tudo</h2>
+            <section class="conteiner2 column wrap around">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+
+            <h2>Flex direction em linha wrap justificando conteudo ao espaço relativo entre tudo</h2>
+            <section class="conteiner2 row wrap around">
+                <span>One</span>
+                <span>two</span>
+                <span>Three</span>
+                <span>Four</span>
+                <span>Five</span>
+                <span>Six</span>
+                <span>Seven</span>
+            </section>
+        </section>
+        
+    </main>
+</body>
+
+</html>
